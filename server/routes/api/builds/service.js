@@ -8,7 +8,9 @@ class BuildsService {
   }
 
   async list () {
-    return this.data.builds
+    return _.map(this.data.builds, b => {
+      return _.pick(b, ['name', 'lastRun'])
+    })
   }
 
   async get (name) {

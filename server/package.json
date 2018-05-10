@@ -20,6 +20,7 @@
     "fastify-blipp": "^1.1.0",
     "fastify-env": "^0.4.0",
     "fastify-sensible": "^0.2.0",
+    "fastify-static": "^0.11.0",
     "lodash": "^4.17.10"
   }
 }

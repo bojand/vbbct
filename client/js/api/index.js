@@ -1,3 +1,8 @@
+const axios = require('axios')
+function getBuilds () {
+  return axios.get('http://0.0.0.0:3000/api/builds').then(r => r.data)
+}
+
 function getSummary () {
   let summary = {
     Count: 2000,
@@ -127,6 +132,7 @@ function getChangeOverTime () {
 }
 
 module.exports = {
+  getBuilds,
   getSummary,
   getHistogram,
   getChangeOverTime
